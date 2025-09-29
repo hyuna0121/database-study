@@ -197,6 +197,9 @@ FROM books b LEFT JOIN borrow_records br ON b.id = br.book_id;
 SELECT ls.name AS '이름', role AS '역할'
 FROM members m JOIN library_staff ls ON m.name = ls.name;
 
+-- 관계 설정 없이도 JOIN을 할 수 있다는 것을 보여줌
+-- 일반적으로는 관계 있는 테이블끼리 JOIN 수행
+
 
 -- 문제 6
 -- 모든 회원과 직원을 대상으로 도서관에서 주최하는 기념 행사에 초대장을 보내려고 합니다. 
